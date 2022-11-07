@@ -57,4 +57,4 @@ def predict(speal_length: float = None, speal_width: float = None, petal_length:
 
     logger.info(f"Time used for inference: {time}")
 
-    return CLASS_NAMES[y]
+    return {"prediction": CLASS_NAMES[y]}
