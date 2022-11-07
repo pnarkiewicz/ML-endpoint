@@ -44,7 +44,7 @@ def predict(speal_length: float = None, speal_width: float = None, petal_length:
     X = np.array([[speal_length, speal_width, petal_length, petal_width]])
     
     if None in X[0]:
-        not_specified = [PARAMS_NAMES[idx] for idx, param in enumerate(X[0]) if param is not None]
+        not_specified = [PARAMS_NAMES[idx] for idx, param in enumerate(X[0]) if param is None]
         logger.error(f"The following parameters aren't specified: {not_specified}")
         raise HTTPException(status_code=404, detail=f"Please specify the following parameters: {not_specified}")
 
