@@ -1,0 +1,29 @@
+pipeline {
+  agent any
+  environment {
+    MAJOR_VERSION = 1
+  }
+  stages {
+    stage('Build') {
+      steps {
+        sh 'ant -f test.xml -v'
+        junit 'reports/result.xml'
+      }
+    }
+    stage('Train') {
+        steps {
+
+        }
+    }
+    stage('Test') {
+        steps {
+
+        }
+    }
+    stage('Deploy') {
+        steps {
+
+        }
+    }
+  }
+}
