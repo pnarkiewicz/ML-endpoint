@@ -1,0 +1,16 @@
+joblib==1.2.0
+numpy==1.23.5
+fastapi
+uvicorn
+sqlalchemy
+python-dotenv
+pydantic
+psycopg2
+pytest
+black
+flake8
+isort
+pytest-cov
+pytest-black
+setuptools
+requests
