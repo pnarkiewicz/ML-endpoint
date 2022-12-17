@@ -1,6 +1,22 @@
 services:
+  database:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+    env_file:
+      - dbms/.env
+    ports:
+      - 5432:5432
   app:
     image: deepsenseai
-    command: ["uvicorn", "main:app", "--host=0.0.0.0", "--port", "8000"]
+    command:
+      [
+        "uvicorn",
+        "main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000"
+      ]
     ports:
       - 8000:8000
