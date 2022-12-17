@@ -16,8 +16,8 @@ app = FastAPI(debug=True)
 db = database.SessionLocal()
 services.add_tables()
 
-model = load("svc.joblib")
-scaler = load("scaler.joblib")
+model = load("models/svc.joblib")
+scaler = load("models/scaler.joblib")
 
 PARAMS_NAMES = {
     0: "speal_length",
@@ -56,6 +56,7 @@ def predict(
         if isinstance(param, float) == False
     ]
 
+    # I.e. there are any incorrect parameters
     if len(incorrect) > 0:
         logger.error(
             f"The following parameters aren incorrectly specified: {incorrect}"

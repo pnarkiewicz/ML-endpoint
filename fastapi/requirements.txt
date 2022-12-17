@@ -14,3 +14,4 @@ pytest-cov
 pytest-black
 setuptools
 requests
+scikit-learn
