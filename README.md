@@ -23,9 +23,9 @@ Technologies used:
 ### 0. Project setup
 1. [Download postgres application](https://www.postgresql.org/download/)
 2. Open postgres application and create the password to access the database
-3. Create .env file in the repo folder according to the template_env.txt
-4. Place the .env file in the repo folder and copy it to fastapi/dbms.
-5. Kill the processes running on localhost:5432 by running ```sudo kill -9 `sudo lsof -t -i:5432```
+3. Kill the processes running on localhost:5432 by running ```sudo kill -9 `sudo lsof -t -i:5432```
+4. Create .env file in the repo folder according to the template_env.txt
+5. Place the .env file in the repo folder and copy it to fastapi/dbms.
 6. Make sure ```*.env``` is added to gitignore!
 
 ### 1. Docker
