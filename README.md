@@ -13,7 +13,8 @@ Technologies used:
     - numpy
     - pandas
     - joblib
-
+    
+## Model training + Endpoint diagram
 ![Model diagram](/images/diagram.png "Model diagram")
 
 
