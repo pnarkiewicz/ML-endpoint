@@ -12,7 +12,6 @@
 *.DS_Store
 *.env
 *.venv/
-*.vscode/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
