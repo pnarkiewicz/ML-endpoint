@@ -44,8 +44,10 @@ Technologies used:
         - if so run ```docker compose up``` again and you should access the endpoint
 
 ### 2. Terminal
-1. Open postgres application and enter the password
+1. Open postgres application and enter the password (don't close it).
 2. Open terminal
+    - Go to the repo folder
+    - Run commands ```make install```, ```make lint```, ```make test``` (1st required, 2nd&3rd optional to test the code)
     - Go to fastapi folder
     - Run command ```uvicorn main:app --host 0.0.0.0 --port 8000"```
     - Make use of a local endpoint ```localhost:8000```!
